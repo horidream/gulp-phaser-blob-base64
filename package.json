@@ -1,0 +1,20 @@
+{
+  "name": "gulp-phaser-blob-base64",
+  "description": "replace blob (images, xml, sound) link to base64",
+  "version": "0.0.1",
+  "author": {
+    "name": "Baoli.Zhai",
+    "email": "horidream@gmail.com"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.9"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "through2": "x"
+  }
+}
