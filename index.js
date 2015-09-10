@@ -32,9 +32,12 @@ function toBase64(options) {
             var imageContent = new Buffer(fs.readFileSync(filepath)).toString('base64');
             typemap = {
                 png:"image/png",
-                jpeg:"image/jpeg",
+                jpeg:"image/jpg",
+                jpg:"image/jpg",
                 mp3:"audio/mp3",
-                xml:"text/xmldata"
+                xml:"text/xmldata",
+                js:"text/javascript"
+
             };            
             content = content.replace(item, 'data:' + typemap[extname.toLowerCase()] + ';base64,' + imageContent);
         });
